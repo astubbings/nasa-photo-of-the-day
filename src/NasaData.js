@@ -5,7 +5,7 @@ import NasaCard from "./NasaCard";
 
 export default function NasaData() {
     
-    const [nasaPhotos, setNasaPhotos] = useState([]);
+    const [nasaPhotos, setNasaPhotos] = useState({});
   
     useEffect(() => {
       axios
