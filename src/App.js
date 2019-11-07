@@ -21,13 +21,20 @@ import styled from 'styled-components'
 
 const Instructions = styled.p`
     color: dodgerblue;
-    
+    text-align: center;
     `
 
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+`
 
 function App() {
   return (
-    <div className="App">
+    <AppContainer>
       <Instructions>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role='img' aria-label='rocket emoji'> 🚀</span>!
@@ -35,7 +42,7 @@ function App() {
 
 
       <NasaData/>
-    </div>
+    </AppContainer>
   );
 }
 
