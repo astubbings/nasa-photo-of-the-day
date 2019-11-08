@@ -6,19 +6,14 @@ const WholeCardContainer = styled.div`
   margin: auto;
   margin-top: 2%;
 `
-
 const ImgContainer = styled.div`
   display: flex;
   align-items: flex-start;
   width: 70%;
-  
-  
 `
 const ImgFromNasa = styled.img`
   max-width: 100%;
-
 `
-
 const InfoContainer = styled.div`
   border: 1px solid lightcyan;
   display: flex;
@@ -26,7 +21,6 @@ const InfoContainer = styled.div`
   width: 30%;
   padding: 0 1%;
 `
-
 const ImageTitleStyled = styled.h1`
   color: rebeccapurple;
   background-color: paleturquoise;
@@ -35,7 +29,9 @@ const ImageTitleStyled = styled.h1`
 const DescTextStyled = styled.p`
   padding-left: 2%;
 `
-
+const DateTaken = styled.h2`
+  padding-left: 2%;
+`
 const NasaCard = props => {
     return (
       <WholeCardContainer>
@@ -45,7 +41,7 @@ const NasaCard = props => {
 
         <InfoContainer>
           <ImageTitleStyled>{props.title}</ImageTitleStyled>
-          <h3>Picture Taken on : {props.date}</h3>
+          <DateTaken>Picture Taken on : {props.date}</DateTaken>
           <DescTextStyled>{props.desc}</DescTextStyled>
         </InfoContainer>
           
