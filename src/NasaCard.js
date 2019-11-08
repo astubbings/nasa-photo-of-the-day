@@ -45,8 +45,6 @@ const NasaCard = props => {
           <DescTextStyled>{props.desc}</DescTextStyled>
         </InfoContainer>
           
-        
-        
 
       </WholeCardContainer>
     );

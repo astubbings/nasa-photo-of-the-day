@@ -35,13 +35,14 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
+
       <Instructions>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role='img' aria-label='rocket emoji'> 🚀</span>!
       </Instructions>
-
-
+      
       <NasaData/>
+
     </AppContainer>
   );
 }
