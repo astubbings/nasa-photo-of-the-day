@@ -20,17 +20,21 @@ const ImgFromNasa = styled.img`
 `
 
 const InfoContainer = styled.div`
-  border: 1px solid red;
+  border: 1px solid lightcyan;
   display: flex;
   flex-direction: column;
   width: 30%;
-  padding: 0 2%;
+  padding: 0 1%;
 `
 
 const ImageTitleStyled = styled.h1`
- color: rebeccapurple;
+  color: rebeccapurple;
+  background-color: paleturquoise;
+  padding: 1%;
 `
-
+const DescTextStyled = styled.p`
+  padding-left: 2%;
+`
 
 const NasaCard = props => {
     return (
@@ -42,7 +46,7 @@ const NasaCard = props => {
         <InfoContainer>
           <ImageTitleStyled>{props.title}</ImageTitleStyled>
           <h3>Picture Taken on : {props.date}</h3>
-          <p>{props.desc}</p>
+          <DescTextStyled>{props.desc}</DescTextStyled>
         </InfoContainer>
           
         
